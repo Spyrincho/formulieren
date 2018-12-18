@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,24 +13,25 @@
 
 <body lang="en">
 
-  <h1> Plan voor jou ontwikkeling </h1>
-  <p> Om een eerste stap te zetten naar een opleidingsplan, daarvoor zal je eerst een paar vragen moeten beantwoorden. Dit formulier helpt jou bij je opleidingsplan.</p>
+  <h1>Onderzoek naar de gemiddelde mens hun blijdschap.</h1>
+  <p> Bedankt dat u deel wiltnemen met dit onderzoek, dit onderzoek heeft als doeleinde om de gemiddelde blijdschap van je aller daagse Nederlander te weten te komen.</p>
 
   <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="post">
     Naam <input type = "text" name="custname" autofocus >
     <select name="Kies je klas" >
-      <option value="Kies je klas" selected>Kies je klas</option>
-       <option value="MG1A" >MG1A</option>
-       <option value="MG1B" >MG1B</option>
-       <option value="MG1C" >MG1C</option>
-       <option value="MG1D" >MG1D</option>
+      <option value="Kies je klas" selected>Kies uw leeftijdsklasse</option>
+       <option value="MG1A" >0-10</option>
+       <option value="MG1B" >12-16</option>
+       <option value="MG1C" >16-21</option>
+       <option value="MG1D" >21-67</option>
+       <option value="MG1D" >67+</option>
    </select>
    <br>
    <fieldset>
-    <legend>Welbevinden</legend>
+    <legend>Algemene Blijheid</legend>
 
 
-    Hoe postief ben je momenteel over je opleding?
+    <strong>Hoe positief bent u momenteel over uw houdige staat van leven op een schaal van 1 tot 10?</strong>
       <br>
      <input type="radio" name="0" value="1"> 1
      <input type="radio" name="0" value="2"> 2
@@ -45,7 +45,9 @@
      <input type="radio" name="0" value="10"> 10
      <br>
 
-     Hoe gemotiveerd ben je om momenteel de opleiding af te maken?
+      <!-- Gemaakt door Patrick Homburg -->
+
+    <strong>Bent u blij met uw huidige partner op een schaal van 1 tot 10?</strong>
        <br>
       <input type="radio" name="1" value="1"> 1
       <input type="radio" name="1" value="2"> 2
@@ -57,50 +59,67 @@
       <input type="radio" name="1" value="8"> 8
       <input type="radio" name="1" value="9"> 9
       <input type="radio" name="1" value="10"> 10
+      <input type="radio" name="1" value="11"> Single/Weduwe
       <br>
 
-      Hoeveel vertrouwen heb je momenteel in je eigen kunnen?
+      <strong>Vind u dat er wat moet veranderen in uw leven?</strong>
         <br>
-       <input type="radio" name="2" value="1"> 1
-       <input type="radio" name="2" value="2"> 2
-       <input type="radio" name="2" value="3"> 3
-       <input type="radio" name="2" value="4"> 4
-       <input type="radio" name="2" value="5"> 5
-       <input type="radio" name="2" value="6"> 6
-       <input type="radio" name="2" value="7"> 7
-       <input type="radio" name="2" value="8"> 8
-       <input type="radio" name="2" value="9"> 9
-       <input type="radio" name="2" value="10"> 10
+       <input type="radio" name="2" value="1"> Helemaal mee eens
+       <input type="radio" name="2" value="2"> Mee eens
+       <input type="radio" name="2" value="3"> Onverschillig
+       <input type="radio" name="2" value="4"> Niet mee eens
+       <input type="radio" name="2" value="5"> Helemaal niet mee eens
+
        <br>
 
 
    </fieldset> <br>
 
    <fieldset>
-    <legend>Sterke Kanten</legend>
-    Wat zijn jou sterke kanten?<br>
-    <input type="checkbox" name="checkbox1" value="checkbox1" > Coderen in HTML/CSS
-    <input type="checkbox" name="checkbox2" value="checkbox2" > Programeren in Java
-    <input type="checkbox" name="checkbox3" value="checkbox3" > Scirpting programeren in JavaScript
-    <input type="checkbox" name="checkbox4" value="checkbox4" > Planning
-    <input type="checkbox" name="checkbox5" value="checkbox5" > Samenwerken
+    <legend>Sexualiteit</legend>
+    <strong>Wat is uw sexualiteit?</strong><br>
+    <select name="Kies je klas" >
+      <option value="Kies je klas" selected>Kies uw geraardheid</option>
+       <option value="Hetero" >Hetero</option>
+       <option value="Gay" >Gay/Lesbie</option>
+       <option value="Bi" >Bisexueel</option>
+       <option value="Pan" >Pansexueel</option>
+       <option value="Ace" >Asexueel</option>
+   </select>
 
 
   </fieldset><br>
 
    <fieldset>
-    <legend>Te verbeteren</legend>
-    Welke kwaliteiten kan je verbeteren?<br>
-    <input type="checkbox" name="checkbox1" value="checkbox1" > Coderen in HTML/CSS
-    <input type="checkbox" name="checkbox2" value="checkbox2" > Programeren in Java
-    <input type="checkbox" name="checkbox3" value="checkbox3" > Scirpting programeren in JavaScript
-    <input type="checkbox" name="checkbox4" value="checkbox4" > Planning
-    <input type="checkbox" name="checkbox5" value="checkbox5" > Samenwerken
+    <legend>Te Verbeteren</legend>
+    <strong>Welke kwaliteiten wilt u verbeteren?</strong><br>
+    <input type="checkbox" name="checkbox1" value="checkbox1" > Sociale vaardigheden
+    <input type="checkbox" name="checkbox2" value="checkbox2" > Financiele situatie
+    <input type="checkbox" name="checkbox3" value="checkbox3" > Sex leven
+    <input type="checkbox" name="checkbox4" value="checkbox4" > Relatie status
+    <input type="checkbox" name="checkbox5" value="checkbox5" > Niet van toepassing
 
 
   </fieldset> <br>
 
-  Wat zijn jouw plannen voor de toekomst?<br>
+  <fieldset>
+   <legend>Geld Zaken</legend>
+   <strong>Hoeveel verdient u per jaar?</strong><br>
+   <select name="Kies je klas" >
+     <option value="Kies je klas" selected>Kies uw salaris</option>
+      <option value="bijstand" >0-20,000</option>
+      <option value="Laag" >20,001-50,000</option>
+      <option value="Gemiddeld" >50,001-150,000</option>
+      <option value="Meer dan Gemiddeld" >150,001+</option>
+      <option value="Rijk" >Asexueel</option>
+  </select>
+
+
+ </fieldset><br>
+
+
+
+  Wat zijn uw plannen voor de toekomst?<br>
   <textarea rows="6" cols="60">
 
   </textarea>
