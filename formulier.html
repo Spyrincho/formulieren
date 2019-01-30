@@ -1,144 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
+  <link rel="stylesheet" href="formulier.css">
 <meta charset="utf-8">
-  <title>Formulier</title> <!-- de title aanpassen  -->
+  <title>Formulieren opdracht</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- voeg de meta-informatie author toe  -->
+  <link rel="icon" href="minilogo.png">
   <meta name="author" content="Patrick Homburg">
-
-<link rel="icon" href="minilogo.png">
-
-<link href="formulier.css" rel="stylesheet" type="text/css">
-
 </head>
 
-<body lang="en">
+<body lang="nl">
+  <header>
+    <h1>Een plan voor jouw ontwikkeling</h1>
+    <p>Om een eerste stap te zetten naar een persoonlijk opleidingplan zul je eerst een paar vragen voor jezelf moeten beantoorden. Dit formulier helpt jou daar bij.</p>
+  </header>
+  <form action="http://bla.hosts.ma-cloud.nl/pop.php">
 
-  <h1>Onderzoek naar de gemiddelde Nederlander hun blijdschap.</h1>
-  <p> Bedankt dat u deel wiltnemen met dit onderzoek, dit onderzoek heeft als doeleinde om de gemiddelde blijdschap van je aller daagse Nederlander te weten te komen.</p>
+Name <input type = "text" name="custname" required autofocus placeholder="bv. Niko Dekkers">
+  <select name="Selecteer jou klas" required class="button_1">
+    <option value="klas">Selecteer jou klas</option>
+    <option value="MG1A">MG1A</option>
+    <option value="MG1B">MG1B</option>
+    <option value="MG1C">MG1C</option>
+    <option value="MG1D">MG1D</option>
+</select>
+    <fieldset>
+        <legend>Welbevinden</legend>
+        <p>Hoe positief ben je op dit moment over je opleiding?</p>
 
-  <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="post">
-    Naam <input type = "text" name="custname" autofocus >
-    <select name="Kies je klas" >
-      <option value="Kies je klas" selected>Kies uw leeftijdsklasse</option>
-       <option value="MG1A" >0-10</option>
-       <option value="MG1B" >12-16</option>
-       <option value="MG1C" >16-21</option>
-       <option value="MG1D" >21-67</option>
-       <option value="MG1D" >67+</option>
-   </select>
-   <br>
-   <fieldset>
-    <legend>Algemene Blijheid</legend>
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="0" id="0" required>
+                      <label for="0">0</label>
 
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="1" id="1" >
+                        <label for="1">1</label>
 
-    <strong>Hoe positief bent u momenteel over uw houdige staat van leven op een schaal van 1 tot 10?</strong>
-      <br>
-     <input type="radio" name="0" value="1"> 1
-     <input type="radio" name="0" value="2"> 2
-     <input type="radio" name="0" value="3"> 3
-     <input type="radio" name="0" value="4"> 4
-     <input type="radio" name="0" value="5"> 5
-     <input type="radio" name="0" value="6"> 6
-     <input type="radio" name="0" value="7"> 7
-     <input type="radio" name="0" value="8"> 8
-     <input type="radio" name="0" value="9"> 9
-     <input type="radio" name="0" value="10"> 10
-     <br>
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="2" id="2">
+                        <label for="2">2</label>
 
-      <!-- Gemaakt door Patrick Homburg -->
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="3" id="3">
+                        <label for="3">3</label>
 
-    <strong>Bent u blij met uw huidige partner op een schaal van 1 tot 10?</strong>
-       <br>
-      <input type="radio" name="1" value="1"> 1
-      <input type="radio" name="1" value="2"> 2
-      <input type="radio" name="1" value="3"> 3
-      <input type="radio" name="1" value="4"> 4
-      <input type="radio" name="1" value="5"> 5
-      <input type="radio" name="1" value="6"> 6
-      <input type="radio" name="1" value="7"> 7
-      <input type="radio" name="1" value="8"> 8
-      <input type="radio" name="1" value="9"> 9
-      <input type="radio" name="1" value="10"> 10
-      <input type="radio" name="1" value="11"> Single/Weduwe
-      <br>
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="4" id="4">
+                        <label for="4">4</label>
 
-      <strong>Vind u dat er wat moet veranderen in uw leven?</strong>
-        <br>
-       <input type="radio" name="2" value="1"> Helemaal mee eens
-       <input type="radio" name="2" value="2"> Mee eens
-       <input type="radio" name="2" value="3"> Onverschillig
-       <input type="radio" name="2" value="4"> Niet mee eens
-       <input type="radio" name="2" value="5"> Helemaal niet mee eens
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="5" id="5">
+                        <label for="5">5</label>
 
-       <br>
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="6" id="6">
+                        <label for="6">6</label>
+
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="7" id="7">
+                        <label for="7">7</label>
+
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="8" id="8">
+                        <label for="8">8</label>
+
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="9" id="9">
+                        <label for="0">9</label>
+
+        <input type="radio" name="Hoe positief ben je op dit moment over je opleiding?" value="10" id="10">
+                        <label for="10">10</label>
 
 
-   </fieldset> <br>
+        <p>Hoe gemotiveerd ben je momenteel om je opleiding af te maken?</p>
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="0" id="11" required>
+                        <label for="11">0</label>
 
-   <fieldset>
-    <legend>Sexualiteit</legend>
-    <strong>Wat is uw sexualiteit?</strong><br>
-    <select name="Kies je klas" >
-      <option value="Kies je klas" selected>Kies uw geraardheid</option>
-       <option value="Hetero" >Hetero</option>
-       <option value="Gay" >Gay/Lesbie</option>
-       <option value="Bi" >Bisexueel</option>
-       <option value="Pan" >Pansexueel</option>
-      
-   </select>
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="1" id="12">
+                        <label for="12">1</label>
 
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="2" id="13">
+                        <label for="13">2</label>
 
-  </fieldset><br>
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="3" id="14">
+                        <label for="14">3</label>
 
-   <fieldset>
-    <legend>Te Verbeteren</legend>
-    <strong>Welke kwaliteiten wilt u verbeteren?</strong><br>
-    <input type="checkbox" name="checkbox1" value="checkbox1" > Sociale vaardigheden
-    <input type="checkbox" name="checkbox2" value="checkbox2" > Financiele situatie
-    <input type="checkbox" name="checkbox3" value="checkbox3" > Sex leven
-    <input type="checkbox" name="checkbox4" value="checkbox4" > Relatie status
-    <input type="checkbox" name="checkbox5" value="checkbox5" > Niet van toepassing
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="4" id="15">
+                        <label for="15">4</label>
 
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="5" id="16">
+                        <label for="16">5</label>
 
-  </fieldset> <br>
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="6" id="17">
+                        <label for="17">6</label>
 
-  <fieldset>
-   <legend>Geld Zaken</legend>
-   <strong>Hoeveel verdient u per jaar?</strong><br>
-   <select name="Kies je klas" >
-     <option value="Kies je klas" selected>Kies uw salaris</option>
-      <option value="bijstand" >0-20,000</option>
-      <option value="Laag" >20,001-50,000</option>
-      <option value="Gemiddeld" >50,001-150,000</option>
-      <option value="Meer dan Gemiddeld" >150,001+</option>
-      <option value="Rijk" >Asexueel</option>
-  </select>
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="7" id="18">
+                        <label for="18">7</label>
+
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="8" id="19">
+                        <label for="19">8</label>
+
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="9" id="20">
+                        <label for="20">9</label>
+
+        <input type="radio" name="Hoe gemotiveerd ben je momenteel om je opleiding af te maken?" value="10" id="21">
+                        <label for="21">10</label>
 
 
- </fieldset><br>
+        <p>Hoeveel vertrouwen heb je momenteel in je eigen kunnen?</p>
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="0" id="30" required>
+                        <label for="30">0</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="1" id="31">
+                        <label for="31">1</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="2" id="32">
+                        <label for="32">2</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="3" id="33">
+                        <label for="33">3</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="4" id="34">
+                        <label for="34">4</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="5" id="35">
+                        <label for="35">5</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="6" id="36">
+                        <label for="36">6</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="7" id="37">
+                        <label for="37">7</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="8" id="38">
+                        <label for="38">8</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="9" id="39">
+                        <label for="39">9</label>
+
+        <input type="radio" name="Hoeveel vertrouwen heb je momenteel in je eigen kunnen?" value="10" id="40">
+                        <label for="40">10</label>
 
 
+        <p>hoe goed vindt jij dat er les wordt gegeven?</p>
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="0" id="50" required>
+                        <label for="50">0</label>
 
-  Wat zijn uw plannen voor de toekomst?<br>
-  <textarea rows="6" cols="60">
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="1" id="51">
+                        <label for="51">1</label>
 
-  </textarea>
-  <input type="submit" value="Submit" />
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="2" id="52">
+                        <label for="52">2</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="3" id="53">
+                        <label for="53">3</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="4" id="54">
+                        <label for="54">4</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="5" id="55">
+                        <label for="55">5</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="6" id="56">
+                        <label for="56">6</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="7" id="57">
+                        <label for="57">7</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="8" id="58">
+                        <label for="58">8</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="9" id="59">
+                        <label for="59">9</label>
+
+        <input type="radio" name="hoe goed vindt jij dat er les wordt gegeven?" value="10" id="60">
+                        <label for="60">10</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Sterke kanten</legend>
+        <p>Wat zijn jou sterke kanten?</p>
+        <input type="checkbox" id="taal1" name=" Coderen in Html/Css" value="Hier ben ik sterk in."> <label for="taal1"> Coderen in Html/Css</label>
+        <input type="checkbox" id="taal2" name="Programmeren in Java" value="Hier ben ik sterk in."> <label for="taal2">Programmeren in Java</label>
+        <input type="checkbox" id="taal3" name="Scripting: programmeren in JavaScript" value="Hier ben ik sterk in."> <label for="taal3">Scripting: programmeren in JavaScript</label>
+        <input type="checkbox" id="taal4" name="Planning" value="Hier ben ik sterk in."> <label for="taal4">Planning</label>
+        <input type="checkbox" id="taal5" name="Samenwerken" value="Hier ben ik sterk in."> <label for="taal5">Samenwerken</label>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>Nog te ontwikkelen</legend>
+        <p>Aan welke skills moet jij nog extra aandacht aan besteden?</p>
+        <input type="checkbox" id="taal6" name=" Coderen in Html/Css" value="Hier moet ik aandacht aan besteden."> <label for="taal6"> Coderen in Html/Css</label>
+        <input type="checkbox" id="taal7" name="Programmeren in Java" value="Hier moet ik aandacht aan besteden."> <label for="taal7">Programmeren in Java</label>
+        <input type="checkbox" id="taal8" name="Scripting: programmeren in JavaScript" value="Hier moet ik aandacht aan besteden."> <label for="taal8">Scripting: programmeren in JavaScript</label>
+        <input type="checkbox" id="taal9" name="Planning" value="Hier moet ik aandacht aan besteden."> <label for="taal9">Planning</label>
+        <input type="checkbox" id="taal10" name="Samenwerken" value="Hier moet ik aandacht aan besteden."> <label for="taal10">Samenwerken</label>
+
+    </fieldset>
+    <p>Wat zijn jou plannen voor de toekomst</p>
+    <textarea rows="6" cols="60" placeholder="bv. Ik wil lead game developer worden."></textarea>
+
+  <input class="button_2" type="submit" value="Verstuur"/>
 
   </form>
-
-
+  <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+      <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+      <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+  </a>
 </body>
-<footer>
-  <div id="validatie">
-      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
-          <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
-      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
-      </a>
-  </div>
-</footer>
-
 </html>
